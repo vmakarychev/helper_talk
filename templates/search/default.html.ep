@@ -1,0 +1,6 @@
+% layout 'default';
+% title 'Форма поискового запроса';
+<form action='<% url_for %>' method='post'>
+    <input type='text' name='q' placeholder='Что будем искать?'>
+    <input type='submit' value='Поехали!'>
+</form>

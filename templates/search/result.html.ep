@@ -1,0 +1,12 @@
+% layout 'default';
+% title 'Результат поиска';
+<ul>
+    % for my $row ( @$result ) {
+        <li>
+            <h2><%= $row->{title} %></h2>
+            <p><%= $row->{content} %></p>
+            <p>Ссылка на статью: <a href="<%= $row->{url} %>"><%= $row->{url} %></a></p>
+        </li>
+    %}
+</ul>
+
